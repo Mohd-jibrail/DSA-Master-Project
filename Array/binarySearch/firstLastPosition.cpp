@@ -5,7 +5,7 @@ int firstPosition(int arr[], int n, int key)
     int start=0,end=n-1;
     int mid= start + (end-start)/2;
     int position=-1;
-    while(start<end)
+    while(start<=end)
     {
         if(arr[mid]==key){
             position = mid;
@@ -22,10 +22,10 @@ int firstPosition(int arr[], int n, int key)
 
 int lastPosition(int arr[], int n, int key)
 {
-    int start =0 , end =0 ;
+    int start =0 , end =n-1;
     int mid = start + (end-start)/2;
     int position = -1;
-    while (start<end)
+    while (start<=end)
     {
         if(arr[mid]==key){
             position = mid;
